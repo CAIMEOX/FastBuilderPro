@@ -10,4 +10,4 @@ mv /sdcard/tencent/QQfile_recv/Sonata.zip ~/sonata/
 cd ~/sonata 
 unzip Sonata.zip && rm Sonata.zip
 echo Installed.
-echo Please use node ~/sonata/Main to launch Fastbuilder Pro.
+echo -e "Please use \033[32m \"cd sonata && node Main\" \033[0m to launch FastBuilderPro"
