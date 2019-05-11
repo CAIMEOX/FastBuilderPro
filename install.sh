@@ -1,4 +1,5 @@
 echo FastBuilderPro Installer.
+termux-setup-storage
 echo Updating Termux.
 apt update -y
 apt upgrade -y
