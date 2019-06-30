@@ -1,14 +1,17 @@
-echo FastBuilderPro Installer.
-termux-setup-storage
-echo Updating Termux.
+echo FastBuilderPro 安装器.
+echo 正在获取存储权限
+termux-setup-storageo
+echo 正在更新Termux
 apt update -y
 apt upgrade -y
-echo Installing NodeJS
+echo 正在安装nodejs
 apt install nodejs -y
-rm -rf ~/sonata && mkdir ~/sonata
-echo Installing FastBuilderPro
-mv /sdcard/tencent/QQfile_recv/Sonata.zip ~/sonata/
-cd ~/sonata 
-unzip Sonata.zip && rm Sonata.zip
-echo Installed.
-echo -e "Please use \033[32m \"cd sonata && node Main\" \033[0m to launch FastBuilderPro"
+rm -rf ~/sonata && mkdir ~/thor
+cd thor
+echo 正在下载脚本
+wget https://coding.net/u/CAIMEO/p/FastBuilder/git/raw/master/Thor.js
+wget https://coding.net/u/CAIMEO/p/FastBuilder/git/raw/master/package.json
+echo 正在添加依赖项
+npm i
+echo 安装成功
+echo -e "请使用 \033[32m \"cd thor && node Main\" \033[0m 来启动　FastBuilderPro"
