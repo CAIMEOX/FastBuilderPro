@@ -9,8 +9,8 @@ apt install nodejs -y
 rm -rf ~/sonata && mkdir ~/thor
 cd thor
 echo 正在下载脚本
-curl coding.net/u/CAIMEO/p/FastBuilder/git/raw/master/Thor.js > Thor.js
-curl coding.net/u/CAIMEO/p/FastBuilder/git/raw/master/package.json > package.json
+curl https://coding.net/u/CAIMEO/p/FastBuilder/git/raw/master/Thor.js > Thor.js
+curl https://coding.net/u/CAIMEO/p/FastBuilder/git/raw/master/package.json > package.json
 echo 正在添加依赖项
 npm i
 echo 正在更新依赖项
